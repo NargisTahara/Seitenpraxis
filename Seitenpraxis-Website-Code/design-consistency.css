@@ -1,0 +1,29 @@
+/* Requested site-wide type, section rhythm and full-bleed image consistency. */
+main,main:not(#start){--section-space:80px;--heading-hero:58px;--heading-section:36px;--heading-card:23px;--heading-small:17px}
+main h1,main:not(#start) h1{font-size:var(--heading-hero)!important}
+main h2,main:not(#start) h2{font-size:var(--heading-section)!important}
+main h3,main:not(#start) h3,main .topic-copy h2,main .topic-card h2,main .project-card h2,main .contact-options h2,main .contact-panel h2,main .disclosure-body h2{font-size:var(--heading-card)!important}
+main h4,main h5,main h6,main:not(#start) h4,main:not(#start) h5,main:not(#start) h6,main .knowledge-title,main .page-sidebar h2{font-size:var(--heading-small)!important}
+#start .hero-copy h1{font-size:clamp(38px,4.7vw,72px)!important}
+#start h2{font-size:clamp(30px,3.7vw,58px)!important}
+#start .contact h2{font-size:clamp(30px,3.1vw,48px)!important}
+#start #leistungen .intro+h3{font-size:16px!important}
+#start #ablauf .step strong,#start .collaboration-cards h3{font-size:17px!important}
+main>section,main:not(#start)>.footer-flush,.designed-page>.contact-bottom-space,.designed-page .knowledge-band,.designed-page .page-contact{padding-top:var(--section-space)!important;padding-bottom:var(--section-space)!important;margin-top:0!important;margin-bottom:0!important}
+main>.hero{height:auto;min-height:0}
+.hero .hero-grid{height:auto;min-height:0;grid-template-rows:auto}
+.hero .hero-visual,.designed-page .inner-hero-visual{width:100%;max-width:520px;height:auto;max-height:none;justify-self:end}
+.hero .hero-image,.designed-page .inner-hero-image,.designed-page .support-image img{display:block;width:100%;height:auto!important;max-height:none;aspect-ratio:3 / 2;object-fit:cover;object-position:center;background:transparent}
+@media(max-width:1024px){main,main:not(#start){--section-space:64px;--heading-hero:44px;--heading-section:31px;--heading-card:23px;--heading-small:17px}}
+@media(max-width:900px){.hero .hero-visual{justify-self:center}}
+@media(max-width:760px){.designed-page .inner-hero-visual{justify-self:center}}
+@media(max-width:600px){main,main:not(#start){--section-space:48px;--heading-hero:33px;--heading-section:26px;--heading-card:21px;--heading-small:17px}#start .hero-copy h1{font-size:clamp(30px,7.3vw,43px)!important}#start h2,#start .contact h2{font-size:28px!important}}
+
+/* Join the closing consultation panel to its preceding section and footer. */
+main:not(#start)>section.page-contact{padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important}
+main>section.page-contact>.contact,main>section.contact{border-radius:12px 12px 0 0}
+
+/* Shared hero scale, matching the landing page exactly. */
+main .hero-copy h1,#start .hero-copy h1,main .inner-hero-copy h1,main:not(#start) .inner-hero-copy h1,main .page-hero h1,main:not(#start) .page-hero h1{font-size:clamp(38px,4.2vw,58px)!important}
+@media(max-width:760px){main .hero-copy h1,#start .hero-copy h1,main .inner-hero-copy h1,main:not(#start) .inner-hero-copy h1,main .page-hero h1,main:not(#start) .page-hero h1{font-size:44px!important}}
+@media(max-width:600px){main .hero-copy h1,#start .hero-copy h1,main .inner-hero-copy h1,main:not(#start) .inner-hero-copy h1,main .page-hero h1,main:not(#start) .page-hero h1{font-size:35px!important}}
